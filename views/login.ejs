@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<style>
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    body {
+        background-color: #26ddeb;
+    }
+    
+    .container {
+        text-align: center;
+    }
+    
+    #submit {
+        margin: 4px 0;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+    
+    form input {
+        border-style: none;
+        width: 250px;
+        height: 20px;
+        font-size: 16px;
+    }
+    
+    #error {
+        color: red;
+    }
+    
+    #logo {
+        color: white;
+        font-size: 50px;
+    }
+    
+    #link {
+        background-color: rgb(59, 59, 59);
+        padding: 9px 9px;
+        border-radius: 15px;
+        text-decoration: none;
+        color: white;
+    }
+    
+    #link:hover {
+        background-color: rgb(31, 31, 31);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1 id="logo">My Poster</h1>
+
+
+        <h1>Welcome to My Poster Login</h1>
+
+        <% if(messages.error){ %>
+            <p id="error">
+                <%= messages.error %>
+            </p>
+            <% } %>
+                <form method="POST" action="/login">
+                    <label>Email</label><br>
+                    <input type="email" name="email" placeholder="email..."><br>
+                    <label>Password</label><br>
+                    <input type="password" name="password" placeholder="password..."><br>
+                    <input type="submit" value="Log In" id="submit">
+                </form>
+                <br>
+                <a href="/register" id="link">Register</a>
+    </div>
+
+</body>
+
+</html>

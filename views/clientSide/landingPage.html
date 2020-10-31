@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="landingSetup.css">
+    <link rel="stylesheet" href="profile/profile.css">
+    <link rel="stylesheet" href="home/home.css">
+    <link rel="stylesheet" href="account-setting/account-setting.css">
+    <title>pro</title>
+</head>
+
+<body class="body">
+
+
+    <div class="nav">
+        <h1>My Poster</h1>
+        <ul id="items">
+            <li>
+                <p id="home">home</p>
+            </li>
+            <li>
+                <p id="profile">profile</p>
+            </li>
+            <li id="myAccount">my account</li>
+            <li id="out">
+                <form method="POST" action="/logout">
+                    <input type="submit" value="log out" id="logout"></input>
+                </form>
+            </li>
+        </ul>
+
+    </div>
+
+
+
+
+    <!-- ---------------------------------------------------------------------------------------------- -->
+    <!-- DYNAMIC DIV CONTAINER -->
+    <div class="dynamicDiv"></div>
+
+
+
+
+
+
+    <script src="landingSetup.js"></script>
+    <script src="profile/profile.js"></script>
+    <script src="home/home.js"></script>
+    <script src="account-setting/account-setting.js"></script>
+</body>
+
+</html>

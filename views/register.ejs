@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<style>
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    body {
+        background-color: #26ddeb;
+    }
+    
+    .container {
+        text-align: center;
+    }
+    
+    form input {
+        border-style: none;
+        width: 250px;
+        height: 20px;
+        font-size: 16px;
+    }
+    
+    #link {
+        background-color: rgb(59, 59, 59);
+        padding: 9px 9px;
+        border-radius: 15px;
+        text-decoration: none;
+        color: white;
+    }
+    
+    #link:hover {
+        background-color: rgb(31, 31, 31);
+    }
+    
+    #submit {
+        cursor: pointer;
+    }
+    
+    #logo {
+        color: white;
+        font-size: 50px;
+    }
+    
+    #error {
+        color: red;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1 id="logo">My Poster</h1>
+        <h1>Create Your Account Now</h1>
+
+        <% if(typeof errors != 'undefined'){ %>
+            <% errors.forEach(function(error) { %>
+                <p id="error">
+                    <%= error.msg %>
+                </p>
+                <% });  %>
+                    <% } %>
+
+                        <form method="POST" action="/register" enctype="multipart/form-data">
+                            <label for="username">Username</label><br>
+                            <input type="text" name="username" placeholder="username..."><br>
+                            <label for="email">Email</label><br>
+                            <input type="email" name="email" placeholder="email..."><br>
+                            <label for="password">Password</label><br>
+                            <input type="password" name="password" placeholder="password..."><br>
+                            <p>Upload profile picture</p>
+                            <input type="file" name="myFile"><br><br>
+                            <input type="submit" value="Register" id="submit">
+                        </form>
+                        <br>
+                        <a href="/login" id="link">Login</a>
+    </div>
+
+</body>
+
+</html>

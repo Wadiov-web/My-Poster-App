@@ -1,0 +1,412 @@
+.pageTag {
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+/* profile bar */
+
+.image {
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    margin-left: 5px;
+    line-height: 80px;
+    cursor: pointer;
+}
+
+.username {
+    font-size: 30px;
+    line-height: 80px;
+    margin-left: 5px;
+}
+
+.infoWrapper {
+    display: flex;
+    height: 80px;
+}
+
+
+/*--------------------------------------------------------------------------------------*/
+
+
+/* POSTS SETUP */
+
+.wrapper {
+    display: flex;
+}
+
+.div1 {
+    position: sticky;
+    top: 100px;
+    width: 350px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div2 {
+    width: 700px;
+    background-color: #bebebe;
+    border-radius: 10px 10px 0 0;
+}
+
+
+/* DIV 1 CONTENTS */
+
+.writePost {
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+.textArea {
+    width: 280px;
+    height: 250px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.sendBtn {
+    padding: 5px 0;
+    border-radius: 20px;
+    width: 200px;
+    font-size: 20px;
+    background-color: #26ddeb;
+    cursor: pointer;
+    border-style: none;
+    outline: none;
+}
+
+.sendBtn:hover {
+    background-color: #303030;
+    color: #26ddeb;
+}
+
+
+/* DIV 2 CONTENTS */
+
+.noPosts {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.post {
+    padding-bottom: 10px;
+    border-radius: 20px;
+    background-color: #9c9c9c;
+    margin-bottom: 5px;
+}
+
+.sec1 {
+    width: 700px;
+    height: 40px;
+    display: flex;
+    border-bottom: 1px solid #000;
+    /*  position: relative; */
+}
+
+.sec2 {
+    width: 700px;
+    /*   background-color: red; */
+}
+
+.p1 {
+    font-size: 18px;
+    /*  line-height: 40px; */
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.p1:hover {
+    text-decoration-line: underline;
+}
+
+.date {
+    font-size: 12px;
+}
+
+.postInfo {
+    padding-top: 3px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+
+/* ------------------------------------------------------------*/
+
+.p2 {
+    padding-top: 10px;
+    font-size: 17px;
+    margin-left: 5px;
+}
+
+.img {
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    border-radius: 40px;
+}
+
+.commentBtn {
+    margin-top: 10px;
+    margin-left: 300px;
+    font-size: 18px;
+    padding: 4px 10px;
+    border-style: none;
+    background-color: #26ddeb;
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none;
+}
+
+.commentBtn:hover {
+    background-color: #303030;
+    color: #26ddeb;
+}
+
+
+/* POPUP MODAL */
+
+.modalDiv {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(107, 107, 107, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.childDiv {
+    width: 500px;
+    height: 500px;
+    background-color: #a1a1a1;
+    overflow-y: scroll;
+}
+
+.close {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ff1717;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.childImg {
+    width: 600px;
+    height: 500px;
+}
+
+
+/* COMMENT SECTION */
+
+.commentDiv {
+    position: sticky;
+    top: 0px;
+}
+
+.commentInput {
+    width: 371px;
+    height: 30px;
+    border-style: none;
+}
+
+.sendComment {
+    font-size: 16px;
+    height: 30px;
+    border-style: none;
+    background-color: #929292;
+    cursor: pointer;
+}
+
+
+/* CREATE COMMENT */
+
+.cmtWrapper {
+    background-color: #26ddeb;
+    border-radius: 10px;
+    margin-bottom: 2px;
+}
+
+.part1 {
+    width: 482px;
+    height: 30px;
+    display: flex;
+    border-bottom: 1px solid #000;
+}
+
+.part2 {
+    width: 482px;
+}
+
+.userImg {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    margin-left: 5px;
+}
+
+.name {
+    font-size: 17px;
+    line-height: 30px;
+    margin-left: 5px;
+}
+
+.comment {
+    font-size: 16px;
+    margin-left: 5px;
+    padding-top: 5px;
+}
+
+
+/* SENDING POSTS */
+
+.failure {
+    font-size: 18px;
+    color: red;
+}
+
+.success {
+    font-size: 18px;
+    color: #26ddeb;
+}
+
+
+/* OPTION BUTTON */
+
+.sec1 .option div {
+    width: 5px;
+    height: 5px;
+    background-color: #4d4d4d;
+    margin-bottom: 2px;
+    border-radius: 5px;
+}
+
+.option {
+    margin-left: 480px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.edit {
+    display: none;
+    width: 150px;
+    height: 50px;
+    background-color: #fff;
+    position: absolute;
+    top: 35px;
+    right: 10px;
+    border-radius: 5px;
+}
+
+.optConfig {
+    display: block;
+}
+
+.posConfg {
+    position: relative;
+}
+
+.update {
+    font-size: 17px;
+    margin-bottom: 5px;
+    padding-left: 3px;
+    padding-top: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delt {
+    font-size: 17px;
+    padding-left: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.update:hover {
+    background-color: #5bf768;
+}
+
+.delt:hover {
+    background-color: red;
+}
+
+
+/* UPDATE MODAL */
+
+.modalD {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(107, 107, 107, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.childD {
+    width: 700px;
+    height: 350px;
+    background-color: #888888;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+.closeOff {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ff1717;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.textCont {
+    width: 500px;
+    height: 250px;
+    font-size: 17px;
+    border-style: none;
+    margin-bottom: 5px;
+}
+
+.uptPar {
+    font-size: 25px;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.updateBtn {
+    cursor: pointer;
+    background-color: #45ff54;
+    font-size: 17px;
+    border-style: none;
+    padding: 5px 18px;
+    border-radius: 10px;
+}
+
+.warning {
+    color: #f10f0f;
+    font-size: 17px;
+}
+
+.successUpdt {
+    text-align: center;
+}

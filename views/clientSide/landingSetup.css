@@ -1,0 +1,63 @@
+/* REST OF THE CODE */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+}
+
+body {
+    background-color: rgb(226, 226, 226);
+}
+
+.nav {
+    height: 60px;
+    width: 100%;
+    background-color: #26ddeb;
+    position: sticky;
+    top: 0;
+    display: flex;
+}
+
+.nav h1 {
+    font-weight: bold;
+    font-size: 45px;
+    color: #f3f2f2;
+    line-height: 60px;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+#items {
+    display: flex;
+    line-height: 60px;
+}
+
+#items li {
+    padding: 0 15px;
+    font-weight: bold;
+    list-style: none;
+    cursor: pointer;
+}
+
+#logout {
+    background-color: #26ddeb;
+    border-style: none;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+#items li:hover {
+    background-color: #303030;
+    color: #26ddeb;
+}
+
+
+/* JS CLASSES */
+
+.switch {
+    transform: translateX(0%);
+    transition: 0.5s;
+}

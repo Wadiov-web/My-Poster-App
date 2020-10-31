@@ -1,0 +1,321 @@
+.pageTag {
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+/* SEARCH DIV */
+
+.searchDiv {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 60px;
+}
+
+.inputDiv {
+    display: flex;
+}
+
+.searchInput {
+    width: 500px;
+    height: 30px;
+    border-style: none;
+    border-radius: 15px;
+    outline: none;
+}
+
+.searchBtn {
+    border-style: none;
+    outline: none;
+    border-radius: 12px;
+    padding: 0 4px;
+    background-color: #26ddeb;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.result {
+    position: absolute;
+    top: 30px;
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+    display: none;
+    margin-right: 20px;
+    border-radius: 15px 15px;
+}
+
+.user {
+    width: 500px;
+    height: 30px;
+    background-color: rgb(216, 214, 214);
+    display: flex;
+    border-radius: 7px;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+
+.user:hover {
+    background-color: rgb(192, 192, 192);
+}
+
+.myuserImg {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.names {
+    line-height: 30px;
+    margin-left: 5px;
+}
+
+.noResult {
+    margin-left: 10px;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------*/
+
+
+/* profile bar */
+
+.myimage {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    margin-left: 5px;
+    line-height: 60px;
+}
+
+.myusername {
+    font-size: 25px;
+    line-height: 60px;
+    margin-left: 5px;
+}
+
+.infoWrapper {
+    display: flex;
+    height: 80px;
+}
+
+
+/*--------------------------------------------------------------------------------------*/
+
+
+/* POSTS SETUP */
+
+.wrapper {
+    display: flex;
+}
+
+.div1 {
+    position: sticky;
+    top: 100px;
+    width: 350px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div2 {
+    width: 700px;
+    /* height: 100vh; */
+}
+
+
+/* DIV 1 CONTENTS */
+
+.writePost {
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+.textArea {
+    width: 280px;
+    height: 250px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.sendBtn {
+    width: 200px;
+    font-size: 20px;
+    background-color: #26ddeb;
+    cursor: pointer;
+    border-style: none;
+}
+
+
+/* DIV 2 CONTENTS */
+
+.noPosts {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.post {
+    padding-bottom: 10px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+
+.sec1 {
+    width: 700px;
+    height: 40px;
+    /*   background-color: lightgreen; */
+    display: flex;
+    border-bottom: 1px solid #000;
+}
+
+.sec2 {
+    width: 700px;
+    /*   background-color: red; */
+}
+
+.p1 {
+    font-size: 18px;
+    /*  line-height: 40px; */
+    margin-left: 5px;
+}
+
+.p2 {
+    padding-top: 10px;
+    font-size: 17px;
+    margin-left: 5px;
+}
+
+.img {
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    border-radius: 40px;
+}
+
+.commentBtn {
+    margin-top: 10px;
+    margin-left: 300px;
+    font-size: 18px;
+    border-style: none;
+    background-color: #26ddeb;
+    cursor: pointer;
+}
+
+
+/* POPUP MODAL */
+
+.modalDiv {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(107, 107, 107, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.childDiv {
+    width: 500px;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.close {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ff1717;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+
+/* COMMENT SECTION */
+
+.commentDiv {
+    position: sticky;
+    top: 0px;
+}
+
+.commentInput {
+    width: 371px;
+    height: 30px;
+    border-style: none;
+}
+
+.sendComment {
+    font-size: 16px;
+    height: 30px;
+    border-style: none;
+    cursor: pointer;
+}
+
+
+/* CREATE COMMENT */
+
+.cmtWrapper {
+    border-radius: 10px;
+    margin-bottom: 2px;
+}
+
+.part1 {
+    width: 482px;
+    height: 30px;
+    display: flex;
+    border-bottom: 1px solid #000;
+}
+
+.part2 {
+    width: 482px;
+}
+
+.userImg {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    margin-left: 5px;
+}
+
+.name {
+    font-size: 17px;
+    line-height: 30px;
+    margin-left: 5px;
+}
+
+.comment {
+    font-size: 16px;
+    margin-left: 5px;
+    padding-top: 5px;
+}
+
+
+/* SENDING POSTS */
+
+.failure {
+    font-size: 18px;
+    color: red;
+}
+
+.success {
+    font-size: 18px;
+    color: #26ddeb;
+}
+
+
+/* VISITED PROFILE */
+
+.shoot {
+    margin: 8px 10px;
+}
